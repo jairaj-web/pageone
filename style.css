@@ -273,7 +273,7 @@ p  { color:var(--body); line-height:1.85 }
         radial-gradient(ellipse at 82% 18%, rgba(201,151,58,.07) 0%, transparent 48%),
         radial-gradient(ellipse at 50% 100%, rgba(14,40,80,.5) 0%, transparent 60%),
         linear-gradient(145deg, #050C19 0%, #0B1426 55%, #0E1830 100%);
-    min-height:94vh; display:flex; flex-direction:column; justify-content:center;
+    min-height:78vh; padding:4.5rem 0; display:flex; flex-direction:column; justify-content:center;
     position:relative; overflow:hidden;
     border-bottom:1px solid rgba(255,255,255,.05);
 }
@@ -324,7 +324,7 @@ p  { color:var(--body); line-height:1.85 }
 }
 .he-dot { width:5px; height:5px; border-radius:50%; background:var(--gold); animation:blink 2s infinite }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
-.hero-left h1 { color:#F1F5F9; line-height:1.05; margin-bottom:1.4rem }
+.hero-left h1 { color:#F1F5F9; line-height:1.06; margin-bottom:1.4rem; font-size:clamp(2.4rem,4.6vw,3.9rem) }
 .hero-left h1 span { display:block }
 .hero-left h1 em {
     font-style:normal;
