@@ -28,7 +28,7 @@
 
 /* ── RESET ────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing:border-box; margin:0; padding:0 }
-html { scroll-behavior:smooth; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale }
+html { scroll-behavior:smooth; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; overflow-x:hidden; max-width:100% }
 body {
     background:var(--bg); color:var(--text);
     font-family:'DM Sans', sans-serif;
