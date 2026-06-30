@@ -706,15 +706,15 @@ p  { color:var(--body); line-height:1.85 }
         radial-gradient(ellipse 55% 70% at 85% 20%, rgba(224,172,78,.20) 0%, transparent 50%),
         radial-gradient(ellipse 80% 60% at 50% 120%, rgba(40,95,185,.35) 0%, transparent 60%),
         linear-gradient(155deg, #07101F 0%, #0B1426 50%, #112347 100%);
-    padding:8rem 5% 5.5rem; text-align:center;
+    padding:5.5rem 5% 4rem; text-align:center;
     position:relative; overflow:hidden;
     border-bottom:1px solid rgba(201,151,58,.18);
 }
 .page-header::before {
     content:''; position:absolute;
-    width:820px; height:820px; border-radius:50%;
+    width:700px; height:700px; border-radius:50%;
     background:radial-gradient(circle, rgba(201,151,58,.22) 0%, rgba(201,151,58,.06) 40%, transparent 66%);
-    top:-260px; left:50%; transform:translateX(-50%);
+    top:-300px; left:50%; transform:translateX(-50%);
     pointer-events:none;
     animation:glowFade 9s ease-in-out infinite;
 }
@@ -723,9 +723,17 @@ p  { color:var(--body); line-height:1.85 }
     content:''; position:absolute; bottom:0; left:0; right:0; height:1px;
     background:linear-gradient(90deg, transparent, rgba(201,151,58,.35) 40%, rgba(201,151,58,.35) 60%, transparent);
 }
-.page-header .eyebrow { justify-content:center }
-.page-header h1 { color:#fff; position:relative; z-index:1; margin-bottom:.8rem }
-.page-header > p { color:rgba(255,255,255,.38); max-width:500px; margin:0 auto; position:relative; z-index:1 }
+.page-header .eyebrow { justify-content:center; margin-bottom:1.3rem }
+.page-header h1 {
+    color:#fff; position:relative; z-index:1; margin:0 auto .9rem;
+    font-size:clamp(2.1rem, 3.2vw + 1rem, 3.4rem);
+    line-height:1.1; max-width:18ch;
+}
+.page-header > p {
+    color:rgba(255,255,255,.5); max-width:520px; margin:0 auto;
+    font-size:1rem; line-height:1.7;
+    position:relative; z-index:1;
+}
 
 /* ── SERVICE DETAIL ───────────────────────────────────────────── */
 .svc-detail {
