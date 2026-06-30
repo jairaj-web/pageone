@@ -729,6 +729,15 @@ p  { color:var(--body); line-height:1.85 }
     font-size:clamp(2.1rem, 3.2vw + 1rem, 3.4rem);
     line-height:1.1; max-width:18ch;
 }
+.page-header h1 em {
+    background:linear-gradient(110deg, #F7DC9A 0%, #C9973A 35%, #F5D98B 50%, #C9973A 65%, #A87B2E 100%);
+    background-size:200% auto;
+    -webkit-background-clip:text; background-clip:text;
+    -webkit-text-fill-color:transparent;
+    filter:drop-shadow(0 0 28px rgba(201,151,58,.3));
+    animation:goldShine 6s linear infinite;
+}
+@media (prefers-reduced-motion: reduce){ .page-header h1 em { animation:none } }
 .page-header > p {
     color:rgba(255,255,255,.5); max-width:520px; margin:0 auto;
     font-size:1rem; line-height:1.7;
