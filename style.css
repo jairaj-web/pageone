@@ -702,19 +702,19 @@ p  { color:var(--body); line-height:1.85 }
 /* ── PAGE HEADER ──────────────────────────────────────────────── */
 .page-header {
     background:
-        radial-gradient(ellipse at 20% 30%, rgba(201,151,58,.14) 0%, transparent 50%),
-        radial-gradient(ellipse at 82% 25%, rgba(201,151,58,.08) 0%, transparent 48%),
-        radial-gradient(ellipse at 50% 120%, rgba(30,80,160,.22) 0%, transparent 60%),
-        linear-gradient(160deg, #050C19 0%, #0B1426 55%, #0E1830 100%);
+        radial-gradient(ellipse 60% 80% at 18% 15%, rgba(201,151,58,.30) 0%, transparent 55%),
+        radial-gradient(ellipse 55% 70% at 85% 20%, rgba(224,172,78,.20) 0%, transparent 50%),
+        radial-gradient(ellipse 80% 60% at 50% 120%, rgba(40,95,185,.35) 0%, transparent 60%),
+        linear-gradient(155deg, #07101F 0%, #0B1426 50%, #112347 100%);
     padding:8rem 5% 5.5rem; text-align:center;
     position:relative; overflow:hidden;
-    border-bottom:1px solid rgba(255,255,255,.05);
+    border-bottom:1px solid rgba(201,151,58,.18);
 }
 .page-header::before {
     content:''; position:absolute;
-    width:760px; height:760px; border-radius:50%;
-    background:radial-gradient(circle, rgba(201,151,58,.13) 0%, rgba(201,151,58,.04) 42%, transparent 68%);
-    top:-200px; left:50%; transform:translateX(-50%);
+    width:820px; height:820px; border-radius:50%;
+    background:radial-gradient(circle, rgba(201,151,58,.22) 0%, rgba(201,151,58,.06) 40%, transparent 66%);
+    top:-260px; left:50%; transform:translateX(-50%);
     pointer-events:none;
     animation:glowFade 9s ease-in-out infinite;
 }
