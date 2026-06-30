@@ -813,6 +813,7 @@ p  { color:var(--body); line-height:1.85 }
     background:var(--card); padding:1.85rem 1.5rem;
     border:1px solid var(--border); border-radius:var(--r-lg);
     position:relative; transition:transform .25s ease, border-color .25s ease;
+    min-width:0;
 }
 .pricing-grid .pc-features li { font-size:.8rem }
 .pricing-grid .pc-sub { font-size:.82rem }
@@ -828,10 +829,10 @@ p  { color:var(--body); line-height:1.85 }
     padding:.28rem 1rem; border-radius:0 0 var(--r-sm) var(--r-sm);
 }
 .pc-tier { font-size:.68rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--gold); margin-bottom:.8rem; display:block }
-.pc-price { display:flex; align-items:baseline; gap:.1rem; margin-bottom:.6rem }
-.pc-curr { font-size:1.3rem; font-weight:700; color:var(--gold) }
-.pc-num { font-family:'Space Grotesk',sans-serif; font-size:3rem; font-weight:700; color:var(--text); line-height:1 }
-.pc-mo { font-size:.85rem; color:var(--muted) }
+.pc-price { display:flex; align-items:baseline; gap:.1rem; margin-bottom:.6rem; flex-wrap:wrap }
+.pc-curr { font-size:1.2rem; font-weight:700; color:var(--gold) }
+.pc-num { font-family:'Space Grotesk',sans-serif; font-size:clamp(2.1rem,5vw,2.7rem); font-weight:700; color:var(--text); line-height:1; letter-spacing:-.02em }
+.pc-mo { font-size:.8rem; color:var(--muted) }
 .pc-sub { font-size:.85rem; color:var(--body); line-height:1.65; margin-bottom:1.5rem }
 .pc-features { display:flex; flex-direction:column; gap:.6rem; margin-bottom:2rem; padding-top:1.4rem; border-top:1px solid var(--border) }
 .pc-features li { display:flex; align-items:flex-start; gap:.65rem; font-size:.86rem; color:var(--body) }
@@ -1092,7 +1093,7 @@ body { animation:pageIn .15s ease both }
     .newsletter    { grid-template-columns:1fr; gap:2rem }
     .contact-layout{ grid-template-columns:1fr; gap:3rem }
     .testi-grid    { grid-template-columns:1fr }
-    .pricing-grid  { grid-template-columns:1fr; max-width:380px; margin-left:auto; margin-right:auto }
+    .wrap .pricing-grid { grid-template-columns:1fr; max-width:380px; margin-left:auto; margin-right:auto }
 }
 @media (max-width:768px) {
     .nav-links, .nav-right .btn { display:none }
