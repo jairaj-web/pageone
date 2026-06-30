@@ -1117,11 +1117,18 @@ body { animation:pageIn .15s ease both }
     .cta-btns { flex-direction:column; align-items:center }
     .form-row { grid-template-columns:1fr }
     .foot-cols { grid-template-columns:1fr; gap:1.6rem }
-    .foot-top { padding:3rem 0 2.5rem }
+    .foot-top { padding:3rem 0 2.5rem; text-align:center }
     .foot-cols .fc + .fc { border-top:1px solid rgba(255,255,255,.07); padding-top:1.6rem }
     .fc h4 { margin-bottom:1rem }
     .foot-social a { width:40px; height:40px }
-    .foot-brand p { max-width:none }
+    /* center everything on mobile for balance */
+    .foot-brand { text-align:center }
+    .foot-brand .logo { justify-content:center }
+    .foot-brand p { max-width:none; margin-left:auto; margin-right:auto }
+    .foot-social { justify-content:center }
+    .fc ul { align-items:center }
+    .fc li a { justify-content:center }
+    .fc-contact li { justify-content:center; text-align:left }
     .nl-inputs { flex-direction:column }
     .work-grid { grid-template-columns:1fr }
     .blog-grid { grid-template-columns:1fr }
