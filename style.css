@@ -740,6 +740,26 @@ p  { color:var(--body); line-height:1.85 }
 .audit-list span { font-size:.86rem; color:var(--body); line-height:1.6 }
 .audit-note { background:var(--gold-lt); border-left:3px solid var(--gold); border-radius:var(--r-sm); padding:1rem 1.2rem; font-size:.85rem; line-height:1.6; color:var(--text) }
 .audit-form-card { background:var(--card); border:1px solid var(--border); border-radius:var(--r-lg); padding:2.2rem; box-shadow:var(--sh-md) }
+.nav-audit { color:var(--gold) !important; font-weight:600 }
+.nav-audit::after { background:var(--gold) !important }
+.audit-banner { padding:0 0 1rem }
+.ab-inner {
+    background:linear-gradient(135deg, #0B1426 0%, #112347 100%);
+    border:1px solid rgba(201,151,58,.25);
+    border-radius:var(--r-lg); padding:2.5rem 3rem;
+    display:flex; align-items:center; justify-content:space-between; gap:2rem;
+    position:relative; overflow:hidden;
+}
+.ab-inner::before {
+    content:""; position:absolute; top:-50%; right:-5%; width:380px; height:380px;
+    background:radial-gradient(circle, rgba(201,151,58,.18) 0%, transparent 65%); pointer-events:none;
+}
+.ab-text { position:relative; z-index:1 }
+.ab-eyebrow { display:inline-block; font-size:.65rem; font-weight:700; letter-spacing:.15em; text-transform:uppercase; color:var(--gold); margin-bottom:.7rem }
+.ab-inner h2 { color:#fff; text-align:left; font-size:clamp(1.4rem,2.5vw,1.9rem); margin-bottom:.5rem }
+.ab-inner p { color:rgba(255,255,255,.6); font-size:.92rem; max-width:560px; margin:0 }
+.audit-banner .btn { flex-shrink:0; position:relative; z-index:1 }
+@media (max-width:768px) { .ab-inner { flex-direction:column; align-items:flex-start; padding:2rem 1.6rem } }
 @media (max-width:860px) { .audit-layout { grid-template-columns:1fr; gap:2.5rem } }
 .foot-bot {
     padding:1.4rem 0;
