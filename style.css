@@ -741,17 +741,17 @@ p  { color:var(--body); line-height:1.85 }
 .audit-note { background:var(--gold-lt); border-left:3px solid var(--gold); border-radius:var(--r-sm); padding:1rem 1.2rem; font-size:.85rem; line-height:1.6; color:var(--text) }
 .audit-form-card { background:var(--card); border:1px solid var(--border); border-radius:var(--r-lg); padding:2.2rem; box-shadow:var(--sh-md) }
 .topbar {
-    background:linear-gradient(90deg, #07101F 0%, #15264a 50%, #07101F 100%);
-    border-bottom:1px solid rgba(201,151,58,.28);
+    background:linear-gradient(90deg, #C9973A 0%, #F5D98B 50%, #C9973A 100%);
+    border-bottom:1px solid rgba(11,20,38,.18);
     text-align:center; padding:.55rem 1rem;
     position:relative; z-index:60;
 }
 .tb-verse {
-    font-size:.78rem; color:rgba(255,255,255,.82); font-style:italic;
-    line-height:1.4; letter-spacing:.01em;
+    font-size:.78rem; color:#0B1426; font-style:italic;
+    line-height:1.4; letter-spacing:.01em; font-weight:500;
 }
 .tb-ref {
-    font-style:normal; font-weight:700; color:var(--gold);
+    font-style:normal; font-weight:700; color:#0B1426;
     margin-right:.55rem; letter-spacing:.04em;
 }
 @media (max-width:600px) { .tb-verse { font-size:.68rem } .topbar { padding:.5rem .9rem } }
