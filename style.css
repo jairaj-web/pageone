@@ -730,6 +730,17 @@ p  { color:var(--body); line-height:1.85 }
 .article .art-cta p { color:rgba(255,255,255,.6); margin-bottom:1.5rem }
 .art-back { display:inline-flex; align-items:center; gap:.4rem; font-size:.85rem; color:var(--muted); text-decoration:none; margin-bottom:1.5rem }
 .art-back:hover { color:var(--gold) }
+
+/* ── FREE AUDIT ───────────────────────────────────────────────── */
+.audit-layout { display:grid; grid-template-columns:1fr 1fr; gap:3.5rem; align-items:start }
+.audit-list { list-style:none; display:flex; flex-direction:column; gap:1.3rem; margin:0 0 1.8rem }
+.audit-list li { display:flex; gap:.9rem; align-items:flex-start }
+.audit-list .al-ico { flex-shrink:0; width:26px; height:26px; border-radius:50%; background:var(--gold-lt); color:var(--gold-dk); display:flex; align-items:center; justify-content:center; font-size:.8rem; font-weight:700; margin-top:2px }
+.audit-list strong { display:block; font-size:.98rem; margin-bottom:.2rem; color:var(--text) }
+.audit-list span { font-size:.86rem; color:var(--body); line-height:1.6 }
+.audit-note { background:var(--gold-lt); border-left:3px solid var(--gold); border-radius:var(--r-sm); padding:1rem 1.2rem; font-size:.85rem; line-height:1.6; color:var(--text) }
+.audit-form-card { background:var(--card); border:1px solid var(--border); border-radius:var(--r-lg); padding:2.2rem; box-shadow:var(--sh-md) }
+@media (max-width:860px) { .audit-layout { grid-template-columns:1fr; gap:2.5rem } }
 .foot-bot {
     padding:1.4rem 0;
     display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem;
