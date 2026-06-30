@@ -943,7 +943,7 @@ p  { color:var(--body); line-height:1.85 }
 .client-logo-item:hover { color:var(--gold); border-color:var(--gold); background:var(--gold-lt) }
 
 /* ── Web Design Portfolio ── */
-.web-portfolio-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1.4rem }
+.web-portfolio-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1.4rem }
 .wp-card { background:var(--card); border:1px solid var(--border); border-radius:var(--r-lg); overflow:hidden; transition:transform .25s, box-shadow .25s, border-color .25s; box-shadow:var(--sh) }
 .wp-card:hover { transform:translateY(-5px); box-shadow:var(--sh-lg); border-color:rgba(201,151,58,.5) }
 .wp-visual { height:160px; position:relative; display:flex; align-items:flex-end; padding:1rem; overflow:hidden }
@@ -957,6 +957,7 @@ p  { color:var(--body); line-height:1.85 }
 .wp-body p { font-size:.82rem; color:var(--body); line-height:1.7; margin-bottom:.8rem }
 .wp-tech-tags { display:flex; flex-wrap:wrap; gap:.3rem }
 .wp-tech-tags span { font-size:.6rem; font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); background:var(--bg-off); border:1px solid var(--border); padding:.18rem .55rem; border-radius:100px }
+@media(max-width:1024px) { .web-portfolio-grid { grid-template-columns:repeat(2,1fr) } }
 @media(max-width:600px) { .web-portfolio-grid { grid-template-columns:1fr } }
 
 .blog-featured { display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--border); border-radius:var(--r-lg); background:var(--card); overflow:hidden }
