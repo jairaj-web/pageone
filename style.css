@@ -1116,8 +1116,12 @@ body { animation:pageIn .15s ease both }
     .hero-ctas { flex-direction:column; align-items:center }
     .cta-btns { flex-direction:column; align-items:center }
     .form-row { grid-template-columns:1fr }
-    .foot-cols { grid-template-columns:1fr; gap:2rem }
+    .foot-cols { grid-template-columns:1fr; gap:1.6rem }
     .foot-top { padding:3rem 0 2.5rem }
+    .foot-cols .fc + .fc { border-top:1px solid rgba(255,255,255,.07); padding-top:1.6rem }
+    .fc h4 { margin-bottom:1rem }
+    .foot-social a { width:40px; height:40px }
+    .foot-brand p { max-width:none }
     .nl-inputs { flex-direction:column }
     .work-grid { grid-template-columns:1fr }
     .blog-grid { grid-template-columns:1fr }
