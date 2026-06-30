@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found — PageOne</title>
+    <link rel="icon" type="image/svg+xml" href="/pageone/favicon.svg">
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{
+            font-family:'DM Sans',sans-serif; min-height:100vh;
+            display:flex; align-items:center; justify-content:center; text-align:center;
+            padding:2rem; color:#fff;
+            background:
+                radial-gradient(ellipse 60% 80% at 20% 20%, rgba(201,151,58,.28) 0%, transparent 55%),
+                radial-gradient(ellipse 70% 60% at 50% 120%, rgba(40,95,185,.32) 0%, transparent 60%),
+                linear-gradient(155deg,#07101F 0%,#0B1426 55%,#112347 100%);
+        }
+        .wrap{max-width:520px}
+        .code{
+            font-family:'Space Grotesk',sans-serif; font-weight:700; line-height:1;
+            font-size:clamp(5rem,18vw,9rem);
+            background:linear-gradient(120deg,#F7DC9A,#C9973A 50%,#A87B2E);
+            -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+            filter:drop-shadow(0 0 32px rgba(201,151,58,.35));
+            margin-bottom:.5rem;
+        }
+        h1{font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:600;margin-bottom:1rem}
+        p{color:rgba(255,255,255,.6);line-height:1.7;margin-bottom:2rem}
+        .btn{
+            display:inline-block;text-decoration:none;color:#fff;font-weight:600;font-size:.95rem;
+            padding:.85rem 2rem;border-radius:100px;
+            background:linear-gradient(135deg,#E0AC4E,#C9973A 50%,#A87B2E);
+            box-shadow:0 8px 28px rgba(201,151,58,.35);
+            transition:transform .2s, box-shadow .2s;
+        }
+        .btn:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(201,151,58,.5)}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="code">404</div>
+        <h1>Page Not Found</h1>
+        <p>Looks like this page moved or never existed. Let's get you back on track.</p>
+        <a href="/pageone/" class="btn">← Back to Home</a>
+    </div>
+</body>
+</html>
