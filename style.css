@@ -993,12 +993,10 @@ p  { color:var(--body); line-height:1.85 }
 .blog-card { background:var(--card); border:1px solid var(--border); border-radius:var(--r-lg); overflow:hidden; transition:transform .25s ease }
 .blog-card:hover { transform:translateY(-3px) }
 .bc-img { height:140px }
-.bc-img, .bf-img { position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden }
-.bc-thumb-ico, .bf-thumb-ico { color:rgba(255,255,255,.92); filter:drop-shadow(0 4px 16px rgba(0,0,0,.4)); position:relative; z-index:1 }
-.bc-thumb-ico svg, .bf-thumb-ico svg { display:block }
+.bc-img, .bf-img { position:relative; overflow:hidden; background-size:cover; background-position:center }
 .bc-img::after, .bf-img::after {
     content:""; position:absolute; inset:0; z-index:0;
-    background:radial-gradient(circle at 50% 40%, rgba(201,151,58,.22) 0%, transparent 60%);
+    background:linear-gradient(180deg, rgba(11,20,38,.15) 0%, rgba(11,20,38,.35) 100%);
 }
 .bc-tag {
     position:absolute; top:.7rem; left:.7rem; z-index:2;
