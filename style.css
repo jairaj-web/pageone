@@ -808,12 +808,14 @@ p  { color:var(--body); line-height:1.85 }
 .sec-divider { height:1px; background:var(--border) }
 
 /* ── PRICING ──────────────────────────────────────────────────── */
-.pricing-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:3.5rem }
+.pricing-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:1rem; margin-top:3.5rem }
 .price-card {
-    background:var(--card); padding:2.5rem;
+    background:var(--card); padding:1.85rem 1.5rem;
     border:1px solid var(--border); border-radius:var(--r-lg);
     position:relative; transition:transform .25s ease, border-color .25s ease;
 }
+.pricing-grid .pc-features li { font-size:.8rem }
+.pricing-grid .pc-sub { font-size:.82rem }
 .price-card:hover { transform:translateY(-4px) }
 .price-card.featured {
     border-color:var(--gold); border-width:2px;
@@ -1079,6 +1081,7 @@ body { animation:pageIn .15s ease both }
     .hero-proof    { justify-content:center }
     .hero-widget   { max-width:440px; margin:0 auto }
     .hf-1, .hf-2  { display:none }
+    .pricing-grid  { grid-template-columns:repeat(3,1fr) }
     .cases-grid    { grid-template-columns:1fr 1fr }
     .feat-grid     { grid-template-columns:1fr 1fr }
     .svc-detail    { grid-template-columns:1fr; gap:3rem }
@@ -1089,7 +1092,7 @@ body { animation:pageIn .15s ease both }
     .newsletter    { grid-template-columns:1fr; gap:2rem }
     .contact-layout{ grid-template-columns:1fr; gap:3rem }
     .testi-grid    { grid-template-columns:1fr }
-    .pricing-grid  { grid-template-columns:1fr }
+    .pricing-grid  { grid-template-columns:1fr; max-width:380px; margin-left:auto; margin-right:auto }
 }
 @media (max-width:768px) {
     .nav-links, .nav-right .btn { display:none }
@@ -1100,6 +1103,7 @@ body { animation:pageIn .15s ease both }
     .stats-grid { grid-template-columns:1fr 1fr }
     .stat-item:nth-child(1), .stat-item:nth-child(2) { border-bottom:1px solid rgba(255,255,255,.06) }
     .stat-item:nth-child(2n) { border-right:none }
+    .pricing-grid { grid-template-columns:repeat(2,1fr) }
     .foot-cols { grid-template-columns:1fr 1fr }
     .foot-top { padding:3.5rem 0 3rem; gap:2.5rem }
     .foot-bot { flex-direction:column; text-align:center; gap:.3rem }
