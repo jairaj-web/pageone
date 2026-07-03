@@ -756,8 +756,9 @@ p  { color:var(--body); line-height:1.85 }
 }
 @media (max-width:600px) { .tb-verse { font-size:.68rem } .topbar { padding:.5rem .9rem } }
 
-.nav-audit { color:var(--gold) !important; font-weight:600 }
-.nav-audit::after { background:var(--gold) !important }
+.nav-links .nav-audit { color:var(--gold) !important; font-weight:600 }
+.nav-links .nav-audit::after { background:var(--gold) !important }
+.mob .nav-audit { color:var(--gold) !important }
 .audit-banner { padding:0 0 1rem }
 .ab-inner {
     background:linear-gradient(135deg, #0B1426 0%, #112347 100%);
