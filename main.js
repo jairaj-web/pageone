@@ -151,10 +151,26 @@ if (contactForm) {
         }
         if (btn) { btn.textContent = 'Sending…'; btn.disabled = true; }
 
-        setTimeout(() => {
+        const data = new URLSearchParams({
+            fname:   fname,
+            lname:   (contactForm.querySelector('#lname')   || {}).value || '',
+            email:   email,
+            company: (contactForm.querySelector('#company') || {}).value || '',
+            service: (contactForm.querySelector('#service') || {}).value || '',
+            message: message
+        });
+
+        fetch('https://script.google.com/macros/s/AKfycbyWWCs1_f--_G_-0_C6hT4-S2I_bBoHS6MaMa_D5r-sLM6iYMtN40V-MV5QPo-Ce0CV/exec', {
+            method: 'POST',
+            mode: 'no-cors',
+            body: data
+        }).then(() => {
             if (fb) fb.innerHTML = '<div class="form-success">✓ Got it! I\'ll reply within 24 hours. For instant reply, <a href="https://wa.me/917829303517" target="_blank" rel="noopener" style="color:#15803d;font-weight:600">WhatsApp me →</a></div>';
             if (btn) { btn.textContent = 'Message Sent ✓'; btn.disabled = false; }
             contactForm.reset();
-        }, 1000);
+        }).catch(() => {
+            if (fb) fb.innerHTML = '<div class="form-error" style="background:#fef2f2;border:1.5px solid #fca5a5;color:#b91c1c;padding:.9rem 1.1rem;border-radius:8px;font-size:.85rem">Couldn\'t send — please WhatsApp me instead: <a href="https://wa.me/917829303517" style="color:#b91c1c;font-weight:600">+91 78293 03517</a></div>';
+            if (btn) { btn.textContent = 'Send Message →'; btn.disabled = false; }
+        });
     });
 }
