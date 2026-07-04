@@ -817,8 +817,15 @@ p  { color:var(--body); line-height:1.85 }
     .founder-photo { max-width:340px; margin:0 auto }
 }
 @media (max-width:860px) { .audit-layout { grid-template-columns:1fr; gap:2.5rem } }
+.foot-areas {
+    padding:1.2rem 0; border-top:1px solid rgba(255,255,255,.06);
+    font-size:.82rem; color:rgba(255,255,255,.5); line-height:1.9;
+}
+.foot-areas .fa-label { color:var(--gold); font-weight:600; margin-right:.4rem }
+.foot-areas a { color:rgba(255,255,255,.55); text-decoration:none; transition:color .2s }
+.foot-areas a:hover { color:var(--gold) }
 .foot-bot {
-    padding:1.4rem 0;
+    padding:1.4rem 0; border-top:1px solid rgba(255,255,255,.06);
     display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem;
 }
 .foot-bot p { font-size:.72rem; color:rgba(255,255,255,.4) }
@@ -1192,6 +1199,7 @@ body { animation:pageIn .15s ease both }
     .stat-item:nth-child(2n) { border-right:none }
     .foot-cols { grid-template-columns:1fr 1fr }
     .foot-top { padding:3.5rem 1.5rem 3rem; gap:2.5rem }
+    .foot-areas { padding:1.2rem 1.5rem; text-align:center }
     .foot-bot { flex-direction:column; text-align:center; gap:.3rem; padding:1.4rem 1.5rem }
     .as-visual { grid-template-columns:1fr 1fr }
 }
