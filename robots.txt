@@ -20,5 +20,5 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://jairaj-web.github.io/pageone/sitemap.xml
-LLMs: https://jairaj-web.github.io/pageone/llms.txt
+Sitemap: https://pageone-bangalore.netlify.app/sitemap.xml
+LLMs: https://pageone-bangalore.netlify.app/llms.txt
