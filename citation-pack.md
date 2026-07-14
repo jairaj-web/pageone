@@ -45,15 +45,30 @@ Digital Marketing Agency, SEO Services, Google Ads Management, Meta Ads
 Management, Social Media Marketing, Website Design, Content Marketing,
 Freelance Digital Marketer
 
-## Where to Submit (free, do these first)
+## Where to Submit (free, do these first — highest impact)
 
 - [ ] Google Business Profile — verify this first, biggest impact
 - [ ] JustDial
-- [ ] Sulekha
 - [ ] IndiaMART
+- [ ] Sulekha
 - [ ] Facebook Business Page (also fixes the placeholder "#" social links in the site footer)
 - [ ] Instagram Business Profile
 - [ ] LinkedIn Company Page
+
+## More Free Directories (do after the above, 10–15 min each)
+
+- [ ] Hotfrog India — hotfrog.in
+- [ ] Grotal — grotal.com
+- [ ] Asklaila — asklaila.com
+- [ ] TradeIndia — tradeindia.com (also good for B2B visibility)
+- [ ] ExportersIndia — exportersindia.com
+- [ ] Yelp India — yelp.co.in
+- [ ] Bing Places for Business — bing.com/places (free, mirrors GBP, often skipped)
+- [ ] Apple Maps Connect — mapsconnect.apple.com (free, boosts Apple Maps + Siri local results)
+
+Quality over quantity: one complete, verified GBP/JustDial/IndiaMART listing
+beats 20 half-filled ones on low-authority sites. Do the first group
+properly before moving to the second.
 
 ## Important
 
