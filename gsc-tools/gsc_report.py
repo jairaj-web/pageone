@@ -5,6 +5,7 @@ Usage:
   python gsc_report.py pages
   python gsc_report.py inspect <url>
   python gsc_report.py sitemaps
+  python gsc_report.py resubmit-sitemap
 """
 import sys
 import json
@@ -16,7 +17,8 @@ from googleapiclient.discovery import build
 
 KEY_PATH = r"c:\Users\Lenovo\Desktop\Digital marketing\.gsc-credentials\pageone-seo-key.json"
 SITE_URL = "https://pageone-bangalore.netlify.app/"
-SCOPES = ["https://www.googleapis.com/auth/webmasters.readonly"]
+SITEMAP_URL = "https://pageone-bangalore.netlify.app/sitemap.xml"
+SCOPES = ["https://www.googleapis.com/auth/webmasters"]
 
 
 def get_service():
@@ -79,12 +81,21 @@ def sitemaps():
     svc = get_service()
     resp = svc.sitemaps().list(siteUrl=SITE_URL).execute()
     for sm in resp.get("sitemap", []):
-        print(f"{sm.get('path')}  status={sm.get('lastSubmitted')}  submitted={sm.get('isPending')}")
+        print(f"{sm.get('path')}  lastSubmitted={sm.get('lastSubmitted')}  lastDownloaded={sm.get('lastDownloaded')}  isPending={sm.get('isPending')}")
+
+
+def resubmit_sitemap():
+    svc = get_service()
+    svc.sitemaps().submit(siteUrl=SITE_URL, feedpath=SITEMAP_URL).execute()
+    print(f"Resubmitted: {SITEMAP_URL}")
+    resp = svc.sitemaps().list(siteUrl=SITE_URL).execute()
+    for sm in resp.get("sitemap", []):
+        print(f"{sm.get('path')}  lastSubmitted={sm.get('lastSubmitted')}  lastDownloaded={sm.get('lastDownloaded')}  isPending={sm.get('isPending')}")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("command", choices=["performance", "pages", "inspect", "sitemaps"])
+    parser.add_argument("command", choices=["performance", "pages", "inspect", "sitemaps", "resubmit-sitemap"])
     parser.add_argument("url", nargs="?")
     parser.add_argument("--days", type=int, default=28)
     args = parser.parse_args()
@@ -100,3 +111,5 @@ if __name__ == "__main__":
         inspect(args.url)
     elif args.command == "sitemaps":
         sitemaps()
+    elif args.command == "resubmit-sitemap":
+        resubmit_sitemap()
