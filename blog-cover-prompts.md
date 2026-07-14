@@ -1,9 +1,11 @@
 # Blog Cover Image Prompts — for ChatGPT/DALL-E
 
-Style note used in every prompt: realistic professional photography (not
-illustration/cartoon), landscape 16:9, warm navy-and-gold color grading to
-match brand (#0B1426 navy, #C9973A gold), no text or typography rendered in
-the image itself — text is added separately via CSS.
+Style note used in every prompt: bold, scroll-stopping editorial photography
+(magazine-cover energy, not stock-photo filler), dramatic lighting and
+strong contrast, striking single focal point, landscape 16:9, warm
+navy-and-gold color grading to match brand (#0B1426 navy, #C9973A gold), no
+text or typography rendered in the image itself — text is added separately
+via CSS.
 
 Save each generated image as instructed, then send me the filenames and I'll
 wire them into the site.
@@ -13,109 +15,108 @@ wire them into the site.
 ## 1. Digital Marketing Cost in Bangalore
 **File:** `digital-marketing-cost.jpg`
 ```
-Professional photograph, Indian rupee coins and banknotes neatly stacked next
-to a calculator and laptop on a wooden desk, warm navy and gold color
-grading, soft natural window light, shallow depth of field, no text, 16:9
-landscape, editorial business photography style
+Dramatic close-up photograph, a single gold coin mid-fall caught in sharp
+focus above a blurred stack of Indian rupee coins and banknotes, dark navy
+background, single strong side light casting bold shadows, high contrast,
+cinematic mood, no text, 16:9 landscape, magazine-cover editorial style
 ```
 
 ## 2. SEO Services in Bangalore
 **File:** `seo-services.jpg`
 ```
-Professional photograph, laptop screen showing an abstract search results
-page with blurred rankings, desk with notebook and coffee, warm navy and gold
-color grading, soft window light, shallow depth of field, no text, 16:9
-landscape, editorial business photography style
+Dramatic photograph, a magnifying glass held up against a dark navy
+background with a glowing golden search bar graphic sharply in focus behind
+the glass, strong rim lighting, high contrast, cinematic mood, no text, 16:9
+landscape, magazine-cover editorial style
 ```
 
 ## 3. SEO for Yelahanka Businesses
 **File:** `seo-yelahanka.jpg`
 ```
-Professional photograph, a small Indian retail shopfront with warm lighting
-and open shutters, an Indian small business owner arranging products on a
-shelf, storefront signage blurred/generic, warm navy and gold color grading,
-golden hour light, no text, 16:9 landscape, editorial documentary style
+Dramatic photograph, an Indian shopkeeper silhouetted against warm golden
+light flooding through an open shop shutter at golden hour, strong
+backlighting, dust particles visible in the light beam, high contrast,
+cinematic mood, no text, 16:9 landscape, editorial documentary style
 ```
 
 ## 4. Google Ads Management in Bangalore
 **File:** `google-ads-management.jpg`
 ```
-Professional photograph, laptop screen showing an abstract ad campaign
-dashboard with bar charts and graphs, desk setup with phone and notebook,
-warm navy and gold color grading, soft studio light, shallow depth of field,
-no text, 16:9 landscape, editorial business photography style
+Dramatic close-up photograph, a rocket-shaped paper airplane launching off a
+laptop keyboard against a dark navy background, motion blur trail in gold
+light, high contrast single-source lighting, cinematic mood, no text, 16:9
+landscape, magazine-cover editorial style
 ```
 
 ## 5. Meta Ads in Bangalore (Facebook & Instagram)
 **File:** `meta-ads.jpg`
 ```
-Professional photograph, smartphone displaying an abstract social media feed
-with engagement icons, held over a desk with a laptop showing analytics
-charts blurred in background, warm navy and gold color grading, soft light,
-no text, 16:9 landscape, editorial business photography style
+Dramatic close-up photograph, a smartphone screen glowing gold in a dark
+room, light spilling onto a hand holding it, sharp focus on screen glow,
+heavy shadow elsewhere in frame, high contrast, cinematic mood, no text, 16:9
+landscape, magazine-cover editorial style
 ```
 
 ## 6. Google Ads vs Meta Ads
 **File:** `google-vs-meta-ads.jpg`
 ```
-Professional photograph, split composition with a laptop on one side showing
-search-style results and a smartphone on the other showing a social feed,
-both softly blurred/abstract, connected by warm navy and gold color grading,
-desk surface, no text, 16:9 landscape, editorial business photography style
+Dramatic split-lighting photograph, two hands reaching toward each other
+from opposite dark corners, one lit gold and one lit navy blue, tension and
+symmetry in the center, high contrast, cinematic mood, no text, 16:9
+landscape, magazine-cover editorial style
 ```
 
 ## 7. Social Media Marketing in Bangalore
 **File:** `social-media-marketing.jpg`
 ```
-Professional photograph, content creator setup with ring light, smartphone
-on tripod, and a laptop showing an abstract content calendar, warm navy and
-gold color grading, soft studio lighting, shallow depth of field, no text,
-16:9 landscape, editorial business photography style
+Dramatic close-up photograph, a ring light glowing gold reflected sharply in
+a pair of glasses or a phone camera lens, dark navy background, shallow
+focus, high contrast, cinematic mood, no text, 16:9 landscape,
+magazine-cover editorial style
 ```
 
 ## 8. Freelance Digital Marketer vs Agency
 **File:** `freelancer-vs-agency.jpg`
 ```
-Professional photograph, one person working focused at a clean minimal desk
-with a laptop, contrasted subtly with a blurred busy open-plan office in soft
-background bokeh, warm navy and gold color grading, natural light, no text,
-16:9 landscape, editorial business photography style
+Dramatic photograph, one figure standing sharply lit and in focus in an
+otherwise dark, empty office space, a wall of blurred empty desks fading
+into shadow behind them, single spotlight effect, high contrast, cinematic
+mood, no text, 16:9 landscape, magazine-cover editorial style
 ```
 
 ## 9. Digital Marketing Checklist for Yelahanka Businesses
 **File:** `checklist-yelahanka.jpg`
 ```
-Professional photograph, a handwritten checklist notepad with checked boxes
-next to a laptop and coffee cup on a wooden desk, warm navy and gold color
-grading, soft natural window light, shallow depth of field, no text, 16:9
-landscape, editorial business photography style
+Dramatic close-up photograph, a hand checking off the final box on a
+checklist with a gold pen, strong single overhead light, everything else
+falling into soft dark shadow, high contrast, cinematic mood, no text, 16:9
+landscape, magazine-cover editorial style
 ```
 
 ## 10. Google Business Profile Verification Guide
 **File:** `gbp-verification.jpg`
 ```
-Professional photograph, a smartphone showing an abstract map-pin style
-interface next to a small business storefront blurred in the background,
-warm navy and gold color grading, golden hour light, no text, 16:9 landscape,
-editorial documentary style
+Dramatic photograph, a glowing gold map pin hovering above a dark navy city
+map background, light rays emanating from the pin, high contrast, cinematic
+mood, no text, 16:9 landscape, magazine-cover editorial style
 ```
 
 ## 11. Email & CRM Automation for Small Businesses
 **File:** `email-crm-automation.jpg`
 ```
-Professional photograph, laptop screen showing an abstract email inbox with
-flowchart-style automation arrows, desk with notebook and pen, warm navy and
-gold color grading, soft studio light, shallow depth of field, no text, 16:9
-landscape, editorial business photography style
+Dramatic photograph, a paper envelope glowing gold at its seams as if lit
+from within, floating against a dark navy background, sharp focus, high
+contrast, cinematic mood, no text, 16:9 landscape, magazine-cover editorial
+style
 ```
 
 ## 12. Digital Marketing for Real Estate Near Devanahalli Airport
 **File:** `real-estate-devanahalli.jpg`
 ```
-Professional photograph, modern residential apartment buildings under
-construction with an airplane visible small in the distant sky, warm navy
-and gold color grading, golden hour light, wide angle, no text, 16:9
-landscape, editorial architectural photography style
+Dramatic wide-angle photograph, a modern apartment tower under construction
+silhouetted against a bold gold-and-navy sunset sky, an airplane crossing
+the frame small in the distance, strong contrast, cinematic mood, no text,
+16:9 landscape, editorial architectural photography style
 ```
 
 ---
