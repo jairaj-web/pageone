@@ -37,7 +37,7 @@ Devanahalli, Sahakar Nagar, North Bangalore, and greater Bangalore.
 
 ## Hours
 
-Monday–Saturday, 9:00 AM – 7:00 PM IST
+Monday–Sunday, 9:00 AM – 10:00 PM IST
 
 ## Services / Keywords for Category Fields
 
