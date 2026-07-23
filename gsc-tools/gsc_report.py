@@ -1,4 +1,6 @@
-"""Google Search Console reporting for pageone-bangalore.netlify.app.
+"""Google Search Console reporting for pageone.bangalore.workers.dev
+(migrated from pageone-bangalore.netlify.app on 2026-07-23 after Netlify
+paused deploys).
 
 Usage:
   python gsc_report.py performance [--days 28]
@@ -16,8 +18,9 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 KEY_PATH = r"c:\Users\Lenovo\Desktop\Digital marketing\.gsc-credentials\pageone-seo-key.json"
-SITE_URL = "https://pageone-bangalore.netlify.app/"
-SITEMAP_URL = "https://pageone-bangalore.netlify.app/sitemap.xml"
+SITE_URL = "https://pageone.bangalore.workers.dev/"
+SITEMAP_URL = "https://pageone.bangalore.workers.dev/sitemap.xml"
+OLD_SITE_URL = "https://pageone-bangalore.netlify.app/"  # frozen Netlify property, kept for reference
 SCOPES = ["https://www.googleapis.com/auth/webmasters"]
 
 
