@@ -11,7 +11,7 @@ them (same spelling, same format) is what makes citations count for local SEO.
 **Phone:** +91 78293 03517
 **WhatsApp:** +91 78293 03517
 **Email:** jairajantony10@gmail.com
-**Website:** https://pageone-bangalore.netlify.app
+**Website:** https://pageone.bangalore.workers.dev
 **Owner:** Jairaj J
 
 ## Short Description (50 words)

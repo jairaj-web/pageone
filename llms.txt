@@ -27,7 +27,7 @@ Primarily serving businesses in Bangalore, Karnataka, India. Remote work availab
 
 - **Phone / WhatsApp**: +91 78293 03517
 - **Email**: jairajantony10@gmail.com
-- **Website**: https://pageone-bangalore.netlify.app
+- **Website**: https://pageone.bangalore.workers.dev
 - **Response time**: Within 24 hours; WhatsApp replies typically within minutes
 
 ## Pricing

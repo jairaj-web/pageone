@@ -20,5 +20,5 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
-Sitemap: https://pageone-bangalore.netlify.app/sitemap.xml
-LLMs: https://pageone-bangalore.netlify.app/llms.txt
+Sitemap: https://pageone.bangalore.workers.dev/sitemap.xml
+LLMs: https://pageone.bangalore.workers.dev/llms.txt
