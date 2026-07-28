@@ -4,3 +4,4 @@ gsc-tools
 scratchpad
 wrangler.toml
 .assetsignore
+worker.js
