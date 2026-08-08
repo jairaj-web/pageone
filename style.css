@@ -730,6 +730,7 @@ p  { color:var(--body); line-height:1.85 }
 .article .art-cta p { color:rgba(255,255,255,.6); margin-bottom:1.5rem }
 .art-back { display:inline-flex; align-items:center; gap:.4rem; font-size:.85rem; color:var(--muted); text-decoration:none; margin-bottom:1.5rem }
 .art-back:hover { color:var(--gold) }
+.art-hero-img { width:100%; height:auto; border-radius:var(--r-lg); margin-bottom:1.8rem; display:block }
 
 /* ── FREE AUDIT ───────────────────────────────────────────────── */
 .audit-layout { display:grid; grid-template-columns:1fr 1fr; gap:3.5rem; align-items:start }
