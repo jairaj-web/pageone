@@ -235,6 +235,34 @@ if (window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers
         dot.style.opacity = ring.style.opacity = '0';
     });
 
+    function spawnSplash(x, y) {
+        const pulse = document.createElement('div');
+        pulse.className = 'cursor-splash-ring';
+        pulse.style.left = x + 'px';
+        pulse.style.top  = y + 'px';
+        document.body.appendChild(pulse);
+        pulse.addEventListener('animationend', () => pulse.remove());
+
+        const count = 10;
+        for (let i = 0; i < count; i++) {
+            const angle = (Math.PI * 2 * i) / count + Math.random() * 0.3;
+            const dist  = 40 + Math.random() * 50;
+            const size  = 8 + Math.random() * 10;
+            const p = document.createElement('div');
+            p.className = 'cursor-smoke cursor-splash-particle';
+            p.style.left = x + 'px';
+            p.style.top  = y + 'px';
+            p.style.width  = size + 'px';
+            p.style.height = size + 'px';
+            p.style.setProperty('--dx', (Math.cos(angle) * dist) + 'px');
+            p.style.setProperty('--dy', (Math.sin(angle) * dist) + 'px');
+            p.style.animationDuration = (0.5 + Math.random() * 0.3) + 's';
+            document.body.appendChild(p);
+            p.addEventListener('animationend', () => p.remove());
+        }
+    }
+    document.addEventListener('mousedown', e => spawnSplash(e.clientX, e.clientY));
+
     function tickCursor() {
         ringX += (mouseX - ringX) * 0.18;
         ringY += (mouseY - ringY) * 0.18;
