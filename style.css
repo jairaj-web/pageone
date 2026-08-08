@@ -1231,6 +1231,29 @@ body { animation:pageIn .15s ease both }
     .team-grid { grid-template-columns:1fr 1fr }
     .stats-grid { grid-template-columns:1fr 1fr }
 }
+/* ═══ CUSTOM CURSOR ═══ */
+.has-custom-cursor, .has-custom-cursor a, .has-custom-cursor button, .has-custom-cursor .btn { cursor:none }
+.has-custom-cursor input, .has-custom-cursor textarea { cursor:text }
+.cursor-dot, .cursor-ring {
+    position:fixed; top:0; left:0; pointer-events:none; z-index:9999;
+    opacity:0; transition:opacity .2s ease;
+    border-radius:50%;
+}
+.cursor-dot {
+    width:6px; height:6px; margin:-3px 0 0 -3px;
+    background:var(--gold,#c9973a);
+}
+.cursor-ring {
+    width:34px; height:34px; margin:-17px 0 0 -17px;
+    border:1.5px solid var(--gold,#c9973a);
+    transition:opacity .2s ease, width .2s ease, height .2s ease, margin .2s ease, background .2s ease, border-color .2s ease;
+}
+.cursor-ring.cursor-hover {
+    width:56px; height:56px; margin:-28px 0 0 -28px;
+    background:rgba(201,151,58,.12);
+}
 @media (prefers-reduced-motion:reduce) {
     *, *::before, *::after { animation-duration:.01ms !important; transition-duration:.01ms !important }
+    .cursor-dot, .cursor-ring { display:none }
+    .has-custom-cursor, .has-custom-cursor a, .has-custom-cursor button, .has-custom-cursor .btn { cursor:auto }
 }

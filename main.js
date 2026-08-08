@@ -174,3 +174,45 @@ if (contactForm) {
         });
     });
 }
+
+// ── CUSTOM CURSOR (desktop/mouse only)
+if (window.matchMedia('(pointer: fine)').matches) {
+    const dot  = document.createElement('div');
+    const ring = document.createElement('div');
+    dot.className  = 'cursor-dot';
+    ring.className = 'cursor-ring';
+    document.body.append(dot, ring);
+    document.body.classList.add('has-custom-cursor');
+
+    let mouseX = 0, mouseY = 0;
+    let ringX  = 0, ringY  = 0;
+    let started = false;
+
+    window.addEventListener('mousemove', e => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        dot.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
+        if (!started) { ringX = mouseX; ringY = mouseY; started = true; }
+        dot.style.opacity = ring.style.opacity = '1';
+    });
+
+    document.addEventListener('mouseleave', () => {
+        dot.style.opacity = ring.style.opacity = '0';
+    });
+
+    function tickCursor() {
+        ringX += (mouseX - ringX) * 0.18;
+        ringY += (mouseY - ringY) * 0.18;
+        ring.style.transform = `translate(${ringX}px, ${ringY}px)`;
+        requestAnimationFrame(tickCursor);
+    }
+    requestAnimationFrame(tickCursor);
+
+    const hoverSelector = 'a, button, .btn, .faq-q, input, textarea, select, [role="button"], .blog-card, .loc-card';
+    document.addEventListener('mouseover', e => {
+        if (e.target.closest(hoverSelector)) ring.classList.add('cursor-hover');
+    });
+    document.addEventListener('mouseout', e => {
+        if (e.target.closest(hoverSelector)) ring.classList.remove('cursor-hover');
+    });
+}
