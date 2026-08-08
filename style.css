@@ -1257,6 +1257,17 @@ body { animation:pageIn .15s ease both }
     background:linear-gradient(135deg, rgba(11,20,38,.85), rgba(201,151,58,.85));
     box-shadow:0 0 0 1px var(--gold,#c9973a), 0 8px 28px rgba(11,20,38,.28);
 }
+.cursor-smoke {
+    position:fixed; top:0; left:0; pointer-events:none; z-index:9998;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(201,151,58,.55) 0%, rgba(201,151,58,.22) 55%, rgba(201,151,58,0) 75%);
+    transform:translate(-50%,-50%);
+    animation:cursor-smoke-fade .7s ease-out forwards;
+}
+@keyframes cursor-smoke-fade {
+    0%   { opacity:.65; transform:translate(-50%,-50%) scale(.4); }
+    100% { opacity:0;   transform:translate(calc(-50% + var(--drift,0px)), -80%) scale(1.6); }
+}
 @media (prefers-reduced-motion:reduce) {
     *, *::before, *::after { animation-duration:.01ms !important; transition-duration:.01ms !important }
     .cursor-dot, .cursor-ring { display:none }

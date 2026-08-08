@@ -176,7 +176,7 @@ if (contactForm) {
 }
 
 // ── CUSTOM CURSOR (desktop/mouse only)
-if (window.matchMedia('(pointer: fine)').matches) {
+if (window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const dot  = document.createElement('div');
     const ring = document.createElement('div');
     dot.className  = 'cursor-dot';
@@ -188,12 +188,31 @@ if (window.matchMedia('(pointer: fine)').matches) {
     let ringX  = 0, ringY  = 0;
     let started = false;
 
+    let lastSmokeAt = 0;
+    function spawnSmoke(x, y) {
+        const now = performance.now();
+        if (now - lastSmokeAt < 45) return;
+        lastSmokeAt = now;
+        const puff = document.createElement('div');
+        puff.className = 'cursor-smoke';
+        const drift = (Math.random() - 0.5) * 24;
+        const size  = 10 + Math.random() * 10;
+        puff.style.left = x + 'px';
+        puff.style.top  = y + 'px';
+        puff.style.width  = size + 'px';
+        puff.style.height = size + 'px';
+        puff.style.setProperty('--drift', drift + 'px');
+        document.body.appendChild(puff);
+        puff.addEventListener('animationend', () => puff.remove());
+    }
+
     window.addEventListener('mousemove', e => {
         mouseX = e.clientX;
         mouseY = e.clientY;
         dot.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
         if (!started) { ringX = mouseX; ringY = mouseY; started = true; }
         dot.style.opacity = ring.style.opacity = '1';
+        spawnSmoke(mouseX, mouseY);
     });
 
     document.addEventListener('mouseleave', () => {
