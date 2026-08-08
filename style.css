@@ -1240,17 +1240,22 @@ body { animation:pageIn .15s ease both }
     border-radius:50%;
 }
 .cursor-dot {
-    width:6px; height:6px; margin:-3px 0 0 -3px;
+    width:8px; height:8px; margin:-4px 0 0 -4px;
     background:var(--gold,#c9973a);
+    box-shadow:0 0 8px 1px rgba(201,151,58,.6);
 }
 .cursor-ring {
-    width:34px; height:34px; margin:-17px 0 0 -17px;
-    border:1.5px solid var(--gold,#c9973a);
-    transition:opacity .2s ease, width .2s ease, height .2s ease, margin .2s ease, background .2s ease, border-color .2s ease;
+    width:36px; height:36px; margin:-18px 0 0 -18px;
+    border:1.5px solid var(--bg-dark,#0B1426);
+    background:rgba(11,20,38,.05);
+    box-shadow:0 0 0 1px rgba(201,151,58,.35), 0 4px 18px rgba(11,20,38,.18);
+    transition:opacity .2s ease, width .25s cubic-bezier(.34,1.56,.64,1), height .25s cubic-bezier(.34,1.56,.64,1), margin .25s cubic-bezier(.34,1.56,.64,1), background .25s ease, border-color .25s ease, box-shadow .25s ease;
 }
 .cursor-ring.cursor-hover {
-    width:56px; height:56px; margin:-28px 0 0 -28px;
-    background:rgba(201,151,58,.12);
+    width:64px; height:64px; margin:-32px 0 0 -32px;
+    border-color:var(--gold,#c9973a);
+    background:linear-gradient(135deg, rgba(11,20,38,.85), rgba(201,151,58,.85));
+    box-shadow:0 0 0 1px var(--gold,#c9973a), 0 8px 28px rgba(11,20,38,.28);
 }
 @media (prefers-reduced-motion:reduce) {
     *, *::before, *::after { animation-duration:.01ms !important; transition-duration:.01ms !important }
