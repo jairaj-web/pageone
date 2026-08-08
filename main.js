@@ -189,21 +189,37 @@ if (window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers
     let started = false;
 
     let lastSmokeAt = 0;
+    let lastSmokeX = null, lastSmokeY = null;
     function spawnSmoke(x, y) {
         const now = performance.now();
-        if (now - lastSmokeAt < 45) return;
+        if (now - lastSmokeAt < 16) return;
+        const dx = lastSmokeX === null ? 0 : x - lastSmokeX;
+        const dy = lastSmokeY === null ? 0 : y - lastSmokeY;
+        const dist = Math.hypot(dx, dy);
+        if (dist < 4 && now - lastSmokeAt < 60) return;
         lastSmokeAt = now;
-        const puff = document.createElement('div');
-        puff.className = 'cursor-smoke';
-        const drift = (Math.random() - 0.5) * 24;
-        const size  = 10 + Math.random() * 10;
-        puff.style.left = x + 'px';
-        puff.style.top  = y + 'px';
-        puff.style.width  = size + 'px';
-        puff.style.height = size + 'px';
-        puff.style.setProperty('--drift', drift + 'px');
-        document.body.appendChild(puff);
-        puff.addEventListener('animationend', () => puff.remove());
+        lastSmokeX = x; lastSmokeY = y;
+
+        const puffs = 1 + (dist > 18 ? 1 : 0);
+        for (let i = 0; i < puffs; i++) {
+            const puff = document.createElement('div');
+            puff.className = 'cursor-smoke';
+            const jitterX = (Math.random() - 0.5) * 10;
+            const jitterY = (Math.random() - 0.5) * 10;
+            const driftX  = (Math.random() - 0.5) * 46;
+            const driftY  = -18 - Math.random() * 30;
+            const size    = 14 + Math.random() * 16;
+            const dur     = 0.6 + Math.random() * 0.5;
+            puff.style.left = (x + jitterX) + 'px';
+            puff.style.top  = (y + jitterY) + 'px';
+            puff.style.width  = size + 'px';
+            puff.style.height = size + 'px';
+            puff.style.setProperty('--dx', driftX + 'px');
+            puff.style.setProperty('--dy', driftY + 'px');
+            puff.style.animationDuration = dur + 's';
+            document.body.appendChild(puff);
+            puff.addEventListener('animationend', () => puff.remove());
+        }
     }
 
     window.addEventListener('mousemove', e => {
